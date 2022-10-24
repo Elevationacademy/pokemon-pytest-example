@@ -1,0 +1,12 @@
+.DS_Store
+.vscode/
+node_modules
+playground.py
+play.txt
+play.sql
+play.py 
+__pycache__
+venv/
+.ipynb_checkpoints/
+.idea/
+.mypy_cache

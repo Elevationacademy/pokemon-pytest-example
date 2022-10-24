@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pokemon</title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+
+</head>
+<header>
+
+</header>
+
+<body>
+
+    <header>
+        <img src="pokemon_logo.png" class="center">
+    </header>
+
+    <form action="http://localhost:3000/pic" method="get">
+        <br />
+        <span>Enter Pokemon Name:</span>
+        <br />
+        <input type="text" name="pokemon" placeholder="pokemon name" />
+        <button id="send">Send</button>
+    </form>
+    <img src="" id="pokemonImg">
+
+    <footer class="footer">
+        <div class="navbar" id="myNavbar">
+            <a href="home_page.html">Home</a>
+            <a href="view_pokemon.html" class="active">View picture</a>
+        </div>
+    </footer>
+
+    <script>
+        fetch("http://localhost:3000/pic").then(function(pic_data){
+            document.getElementById('pokemonImg').setAttribute("src", "")
+        })
+    </script>
+
+
+</body>
+
+</html>
